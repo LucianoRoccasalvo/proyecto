@@ -1,0 +1,158 @@
+*{  
+    padding: 5px;
+    font-family: 'Cinzel', serif;
+}
+
+/* Index */
+
+.navbar{
+    display: flex;
+    justify-content: end;
+}
+
+.nav-link{
+    display: flex;
+    color: #000000;
+    padding: 0px 5px;
+    text-decoration: none;
+    border: #adadad 5px outset;
+}
+
+.nav-link:hover{
+    background-color: #929292;
+    border: #adadad 5px inset;
+}
+
+.img-gym{
+    width: 500px;
+}
+
+/* Productos */
+
+.section-productos{
+    text-align: center;
+    padding: 2px;
+    margin: 10px;
+    list-style: none;
+    border: #adadad 5px inset;
+}
+
+.img-productos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: #adadad 5px inset;
+}
+
+/* Rutinas */
+
+.titulo-rutinas{
+    text-align: center;
+}
+
+.section-rutinas{
+    padding: 2px;
+    margin: 10px;
+    text-align: center;
+    border: #adadad 5px inset;  
+}
+
+/* Actividades */
+
+.section-actividades{
+    text-align: center;
+    padding: 2px;
+    margin: 10px;
+    border: #adadad 5px inset;
+}
+
+.img-actividades{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: #adadad 5px inset;
+}
+
+/* Contacto */
+
+.titulo-contacto{
+    text-align: center;
+}
+.section-contacto{
+    display: grid;
+    grid-template-columns: repeat(3,5fr);
+    align-items: center;
+    text-align: center;
+    padding: 2px;
+    margin: 10px;
+    border: #adadad 5px inset;
+}
+
+.section-inicio{
+    padding: 2px;
+    margin: 10px;
+    text-align: center;
+    border: #adadad 5px inset;
+}
+
+.article1-div{
+    border: #adadad 5px inset;
+}
+
+.article2-div{
+    padding: 15px;
+    margin: 10px;
+    border: #adadad 5px inset;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer */
+
+.footer{
+    margin: 10px 10px;
+    display: flex;
+    justify-content: end;
+    border: #adadad 5px inset;
+}
+
+.div-footer{
+    text-align: center;
+}
+
+
+/* === Media Queries === */
+
+@media screen and (max-width:768px) {
+    .navbar{
+        display: inline;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .img-gym {
+        max-width: 50%;
+    }
+    
+    .link {
+        max-width: 50%;
+    }
+    
+    .img-actividades{
+        max-width: 75%;
+    }
+
+    .video-rutina{
+        max-width: 50%;
+    }
+
+    .img-productos{
+        max-width: 75%  ;
+    }
+    
+    }
+
