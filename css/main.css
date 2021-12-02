@@ -6,14 +6,13 @@
 /* Index */
 
 .navbar{
-    display: flex;
-    justify-content: end;
+    background: rgb(173,173,173);
+    background: linear-gradient(180deg, rgba(173,173,173,1) 0%, rgba(235,235,235,1) 50%, rgba(173,173,173,1) 100%);
 }
 
 .nav-link{
     display: flex;
     color: #000000;
-    padding: 0px 5px;
     text-decoration: none;
     border: #adadad 5px outset;
 }
@@ -31,10 +30,7 @@
 
 .section-productos{
     text-align: center;
-    padding: 2px;
-    margin: 10px;
     list-style: none;
-    border: #adadad 5px inset;
 }
 
 .img-productos{
@@ -51,8 +47,6 @@
 }
 
 .section-rutinas{
-    padding: 2px;
-    margin: 10px;
     text-align: center;
     border: #adadad 5px inset;  
 }
@@ -61,16 +55,6 @@
 
 .section-actividades{
     text-align: center;
-    padding: 2px;
-    margin: 10px;
-    border: #adadad 5px inset;
-}
-
-.img-actividades{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: #adadad 5px inset;
 }
 
 /* Contacto */
@@ -83,16 +67,12 @@
     grid-template-columns: repeat(3,5fr);
     align-items: center;
     text-align: center;
-    padding: 2px;
-    margin: 10px;
     border: #adadad 5px inset;
 }
 
 .section-inicio{
-    padding: 2px;
-    margin: 10px;
     text-align: center;
-    border: #adadad 5px inset;
+    
 }
 
 .article1-div{
@@ -100,8 +80,6 @@
 }
 
 .article2-div{
-    padding: 15px;
-    margin: 10px;
     border: #adadad 5px inset;
 }
 
@@ -118,6 +96,8 @@ img{
     display: flex;
     justify-content: end;
     border: #adadad 5px inset;
+    background: rgb(173,173,173);
+    background: linear-gradient(180deg, rgba(173,173,173,1) 0%, rgba(235,235,235,1) 50%, rgba(173,173,173,1) 100%);
 }
 
 .div-footer{
