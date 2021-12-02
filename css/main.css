@@ -25,11 +25,6 @@
 
 .img-gym{
     width: 500px;
-    transition: all 1s;
-}
-
-.img-gym:hover {
-    transform: scale(1.5);
 }
 
 /* Productos */
