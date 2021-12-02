@@ -7,46 +7,109 @@
     <title>Rutinas</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <header class="header">
-        <img src="../imagenes/Olympos.png" width="150" height="50" alt="Olympos" align="left">
-        <nav class="nav">
-            <div class="navbar">
-                <a class="nav-link" href="../Index.html">Inicio</a>
-                <a class="nav-link" href="../paginas/actividades.html">Actividades</a>
-                <a class="nav-link" href="../paginas/rutinas.html">Rutinas</a>
-                <a class="nav-link" href="../paginas/productos.html">Productos</a>
-                <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <img src="../imagenes/Olympos.png" width="150" height="50" alt="Olympos" class="d-inline-block">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Olympos</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../paginas/actividades.html">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../paginas/rutinas.html">Rutinas</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="../paginas/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="../paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
             </div>
         </nav>
     </header>
     <div class="titulo-rutinas"><h2>Rutinas</h2>
         <section class="section-rutinas">
-        <h2>Lunes</h2>
-        <iframe class="video-rutina" width="560" height="315" src="https://www.youtube.com/embed/KUsxf3ZFA28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-    <section class="section-rutinas">
-        <h2>Martes</h2>
-        <iframe class="video-rutina" width="560" height="315" src="https://www.youtube.com/embed/TWDG_6uzli0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-    <section class="section-rutinas">
-        <h2>Miercoles</h2>
-        <iframe class="video-rutina" width="560" height="315" src="https://www.youtube.com/embed/WqLcxTOHKvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-    <section class="section-rutinas">
-        <h2>Jueves</h2>
-        <iframe class="video-rutina" width="560" height="315" src="https://www.youtube.com/embed/TxvnslZiw90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-    <section class="section-rutinas">
-        <h2>Viernes</h2>
-        <iframe class="video-rutina" width="560" height="315" src="https://www.youtube.com/embed/8V57EbWrDzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-    <section class="section-rutinas">
-        <h2>Sabado</h2>
-        <iframe class="video-rutina" width="560" height="315" src="https://www.youtube.com/embed/E16SZFRYuyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Lunes
+                    </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><iframe class="video-rutina" width="560" height="315" src="https://www.youtube.com/embed/KUsxf3ZFA28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Martes
+                    </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><iframe class="video-rutina" width="560" height="315" src="https://www.youtube.com/embed/TWDG_6uzli0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Miercoles
+                    </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><iframe class="video-rutina" width="560" height="315" src="https://www.youtube.com/embed/WqLcxTOHKvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Jueves
+                    </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><iframe class="video-rutina" width="560" height="315" src="https://www.youtube.com/embed/TxvnslZiw90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Viernes
+                    </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><iframe class="video-rutina" width="560" height="315" src="https://www.youtube.com/embed/8V57EbWrDzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Sabado
+                    </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><iframe class="video-rutina" width="560" height="315" src="https://www.youtube.com/embed/E16SZFRYuyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+        </div>
     </div>
     <footer class="footer">
         <div class="div-footer">Derechos reservados © Luciano Roccasalvo</div>
@@ -63,5 +126,6 @@
         <a href="https://www.whatsapp.com/">
         <img src="../imagenes/whatapp.png" width="25"height="25"  alt=""class="link"></a>
     </footer>
+    <script src="../Bootstrap/js/bootstrap.js"></script>
 </body>
 </html>

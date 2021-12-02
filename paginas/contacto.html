@@ -7,48 +7,90 @@
     <title>Contacto</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <header class="header">
-        <img src="../imagenes/Olympos.png" width="150" height="50" alt="Olympos" align="left">
-        <nav class="nav">
-            <div class="navbar">
-            <a class="nav-link" href="../Index.html">Inicio</a>
-            <a class="nav-link" href="../paginas/actividades.html">Actividades</a>
-            <a class="nav-link" href="../paginas/rutinas.html">Rutinas</a>
-            <a class="nav-link" href="../paginas/productos.html">Productos</a>
-            <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <img src="../imagenes/Olympos.png" width="150" height="50" alt="Olympos" class="d-inline-block">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Olympos</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../paginas/actividades.html">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../paginas/rutinas.html">Rutinas</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="../paginas/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="../paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
             </div>
         </nav>
     </header>
     <div class="titulo-contacto"><H2>Contacto</H2></div>
-    <section class="section-contacto">
-        <form>
-            <div>
-                <label for="nombre">Nombre: </label> 
-                <input type="text" name="nombre" id="nombre" required placeholder="Nombre">
-            </div>
-            <div>
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email" required placeholder="Email">
-            </div>
-            <div>Sexo:<select name="Sexo">
-                <option value="M">Masculino</option>
-                <option value="F">Femenino</option>
-                </select>
-            </div>
-            <div>
-                <label for="consulta">consulta:</label>
-                <textarea name="consulta" id="consulta"></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Enviar Formulario">
-                <input type="reset" value="Borrar Formulario">
-            </div>
-            <div><div>Desea recibir el Newsletter?</div>
-            <input type="checkbox" name="Si" value="1" />
-        </form>
+    <form class="row g-3">
+        <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Nombre</label>
+        <input type="email" class="form-control" id="Nombre">
+        </div>
+        <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Apellido</label>
+        <input type="password" class="form-control" id="Apellido">
+        </div>
+        <div class="col-12">
+        <label for="inputAddress" class="form-label">Email</label>
+        <input type="text" class="form-control" id="Email">
+        </div>
+            <div class="col-md-6">
+        <label for="inputCity" class="form-label">Ciudad</label>
+        <input type="text" class="form-control" id="Ciudad">
+        </div>
+        <div class="col-md-6">
+        <label for="inputState" class="form-label">Sexo</label>
+        <select id="inputState" class="form-select">
+            <option selected></option>
+            <option>Femenino</option>
+            <option>Masculino</option>
+        </select>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Comentario" id="Comentario" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comentario</label>
+        </div>
+        <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+            Desea recibir el Newsletter?
+            </label>
+        </div>
+        </div>
+        <div class="col-2">
+        <button type="submit" class="">Enviar Formulario</button>
+        </div>
+        <div class="col-2">
+        <button type="submit" class="">Borrar Formulario</button>
+        </div>
+    </form>
     </section>
     <footer class="footer">
         <div class="div-footer">Derechos reservados © Luciano Roccasalvo</div>
@@ -65,5 +107,6 @@
         <a href="https://www.whatsapp.com/">
         <img src="../imagenes/whatapp.png" width="25"height="25"  alt=""class="link"></a>
     </footer>
+    <script src="../Bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
