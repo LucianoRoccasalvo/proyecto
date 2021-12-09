@@ -1,0 +1,23 @@
+@media screen and (max-width:768px) {
+    .navbar{
+        display: inline;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img-gym {
+        max-width: 50%;
+    }
+    .link {
+        max-width: 50%;
+    }
+    .img-actividades{
+        max-width: 75%;
+    }
+    .video-rutina{
+        max-width: 50%;
+    }
+    .img-productos{
+        max-width: 75%  ;
+    }
+    
+    }

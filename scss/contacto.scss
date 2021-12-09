@@ -1,0 +1,10 @@
+.titulo-contacto{
+    text-align: center;
+}
+.section-contacto{
+    display: grid;
+    grid-template-columns: repeat(3,5fr);
+    align-items: center;
+    text-align: center;
+    border: #adadad 5px inset;
+}
