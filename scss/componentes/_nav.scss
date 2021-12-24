@@ -1,0 +1,16 @@
+.navbar{
+    background: $colorbg;
+    background: $gradientebg;
+}
+
+.nav-link{
+    display: flex;
+    color: $color-nav;
+    text-decoration: none;
+    border: $colorborder $estiloborder2;
+}
+
+.nav-link:hover{
+    background-color: $nav-bg;
+    border: $colorborder $estiloborder;
+}

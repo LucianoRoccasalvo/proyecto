@@ -1,13 +1,11 @@
-*{  
-    padding: 5px;
-    font-family: 'Cinzel', serif;
-}
+@import "estilos";
+@import "componentes/nav";
+@import "componentes/footer";
+@import "componentes/inicio";
+@import "componentes/contacto";
+@import "componentes/actividades";
+@import "componentes/productos";
+@import "componentes/rutinas";
+@import "componentes/media";
 
-@import "nav";
-@import "footer";
-@import "inicio";
-@import "contacto";
-@import "actividades";
-@import "productos";
-@import "rutinas";
-@import "media";
+
