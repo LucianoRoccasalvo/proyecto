@@ -74,11 +74,19 @@ img {
   text-align: center;
   border: #adadad 5px inset; }
 
-@media screen and (max-width: 768px) {
-  .navbar {
-    display: inline;
-    flex-direction: column;
-    justify-content: end; }
+@media (max-width: 360px) {
+  .img-gym {
+    max-width: 55%; }
+  .link {
+    max-width: 55%; }
+  .img-actividades {
+    max-width: 80%; }
+  .video-rutina {
+    max-width: 55%; }
+  .img-productos {
+    max-width: 80%; } }
+
+@media (min-width: 361px) and (max-width: 768px) {
   .img-gym {
     max-width: 50%; }
   .link {
@@ -89,3 +97,15 @@ img {
     max-width: 50%; }
   .img-productos {
     max-width: 75%; } }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .img-gym {
+    max-width: 45%; }
+  .link {
+    max-width: 45%; }
+  .img-actividades {
+    max-width: 70%; }
+  .video-rutina {
+    max-width: 45%; }
+  .img-productos {
+    max-width: 70%; } }

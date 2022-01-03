@@ -1,23 +1,93 @@
-@media screen and (max-width:768px) {
-    .navbar{
-        display: inline;
-        flex-direction: column;
-        justify-content: end;
+$breakpoint-1: 360px;
+$breakpoint-2: 768px;
+$breakpoint-3: 1024px;
+$breakpoint-4: 1361px;
+
+@mixin media($media) {
+
+    @if  $media==1 {
+        @media (max-width: $breakpoint-1){
+            @content;
+        }
     }
+    
+    @else if $media==2 {
+        @media (min-width: ($breakpoint-1 + 1)) and (max-width: $breakpoint-2) {
+            @content;
+        }
+    }
+
+    @else if $media==3 {
+        @media (min-width: ($breakpoint-2 + 1)) and (max-width: $breakpoint-3) {
+            @content;
+        }
+    }
+
+    @else if $media==4 {
+        @media (min-width: ($breakpoint-3 + 1)) {
+            @content;
+        }
+    }
+}
+
+
+
+@include media (1) {
+    
     .img-gym {
-        max-width: 50%;
+        max-width: 55%;
     }
     .link {
-        max-width: 50%;
+        max-width: 55%;
     }
     .img-actividades{
-        max-width: 75%;
+        max-width: 80%;
     }
     .video-rutina{
-        max-width: 50%;
+        max-width: 55%;
     }
     .img-productos{
-        max-width: 75%  ;
+        max-width: 80%;
     }
     
     }
+
+@include media (2) {
+    
+        .img-gym {
+            max-width: 50%;
+        }
+        .link {
+            max-width: 50%;
+        }
+        .img-actividades{
+            max-width: 75%;
+        }
+        .video-rutina{
+            max-width: 50%;
+        }
+        .img-productos{
+            max-width: 75%;
+        }
+        
+        }
+
+@include media (3) {
+   
+            .img-gym {
+                max-width: 45%;
+            }
+            .link {
+                max-width: 45%;
+            }
+            .img-actividades{
+                max-width: 70%;
+            }
+            .video-rutina{
+                max-width: 45%;
+            }
+            .img-productos{
+                max-width: 70%;
+            }
+            
+            }
