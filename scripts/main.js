@@ -1,9 +1,11 @@
 let nombre = "";
 let edad = Number;
 let certificado = "si";
+let listaNombres = [];
 
 while (nombre == "" || nombre == " ") {
     nombre = prompt ("Ingresar nombre");
+    listaNombres.push(nombre);
     
     if (nombre != "" && nombre != " "){
         alert ("Bienvenido " + nombre);
