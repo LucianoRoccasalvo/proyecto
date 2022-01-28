@@ -10,4 +10,4 @@ const clases = [
 ]
 
     const clase1 = clases.map((el) => el.nombre)
-    alert (clase1)
+    console.log(clase1)
