@@ -59,22 +59,26 @@
     <div class="titulo-contacto"><H2>Contacto</H2></div>
     <form class="row g-3">
         <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Nombre</label>
-            <input type="email" class="form-control" id="Nombre">
+            <label for="input" class="form-label">Nombre</label>
+            <input #id="nombre" type="text" class="form-control" value=''>
         </div>
         <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Apellido</label>
-            <input type="password" class="form-control" id="Apellido">
+            <label for="input" class="form-label">Apellido</label>
+            <input #id="apellido" type="text" class="form-control" value=''>
         </div>
         <div class="col-12">
-            <label for="inputAddress" class="form-label">Email</label>
-            <input type="text" class="form-control" id="Email">
+            <label for="input" class="form-label">Email</label>
+            <input #id="email" type="text" class="form-control" value='' >
         </div>
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="Ciudad">
-            </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
+            <label for="inputAge" class="form-label">Edad</label>
+            <input #id="edad" type="number" class="form-control" value='' >
+        </div>
+        <div class="col-md-4">
+            <label for="inputCert" class="form-label">Certificado</label>
+            <input #id='certificado' type="text" class="form-control" value=''>
+        </div>
+        <div class="col-md-4">
             <label for="inputState" class="form-label">Sexo</label>
             <select id="inputState" class="form-select">
             <option selected></option>
@@ -120,5 +124,6 @@
     </footer>
 <!-- Boot/js -->
     <script src="../Bootstrap/js/bootstrap.js"></script>
+    <script src="../scripts/main.js"></script>
 </body>
 </html>
