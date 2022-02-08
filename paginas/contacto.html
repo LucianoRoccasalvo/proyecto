@@ -57,26 +57,26 @@
     </header>
 <!-- Formulario de consulta -->
     <div class="titulo-contacto"><H2>Contacto</H2></div>
-    <form class="row g-3">
+    <form id="formulario" class="row g-3">
         <div class="col-md-6">
             <label for="input" class="form-label">Nombre</label>
-            <input #id="nombre" type="text" class="form-control" value=''>
+            <input id="nombre" type="text" class="form-control" value=''>
         </div>
         <div class="col-md-6">
             <label for="input" class="form-label">Apellido</label>
-            <input #id="apellido" type="text" class="form-control" value=''>
+            <input id="apellido" type="text" class="form-control" value=''>
         </div>
         <div class="col-12">
             <label for="input" class="form-label">Email</label>
-            <input #id="email" type="text" class="form-control" value='' >
+            <input id="email" type="text" class="form-control" value='' >
         </div>
         <div class="col-md-4">
             <label for="inputAge" class="form-label">Edad</label>
-            <input #id="edad" type="number" class="form-control" value='' >
+            <input id="edad" type="number" class="form-control" value='' >
         </div>
         <div class="col-md-4">
             <label for="inputCert" class="form-label">Certificado</label>
-            <input #id='certificado' type="text" class="form-control" value=''>
+            <input id='certificado' type="text" class="form-control" value=''>
         </div>
         <div class="col-md-4">
             <label for="inputState" class="form-label">Sexo</label>
@@ -99,7 +99,7 @@
             </div>
         </div>
         <div class="col-2">
-            <button type="submit" class="">Enviar Formulario</button>
+            <button id="botonEnviar" type="submit" class="">Enviar Formulario</button>
         </div>
         <div class="col-2">
             <button type="submit" class="">Borrar Formulario</button>
