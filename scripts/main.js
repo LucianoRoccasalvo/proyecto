@@ -12,9 +12,16 @@
 
     let certificado = document.getElementById('certificado');
 
+  
     
     let miFormulario = document.getElementById('formulario');
 
+    localStorage.setItem('nombre', "");
+    localStorage.setItem('apellido', "");
+    localStorage.setItem('edad', "");
+    localStorage.setItem('email', "");
+    localStorage.setItem('certificado', "");
+    console.log(localStorage);
         
         miFormulario.addEventListener("submit", envioFormulario);
             
@@ -25,9 +32,8 @@
 
             let formulario = e.target
 
-            console.log(miFormulario.children[0].value)
-            console.log(miFormulario.children[1].value)
-            console.log(miFormulario.children[2].value)
+           
         }
 
-    
+        
+
