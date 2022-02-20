@@ -38,6 +38,7 @@
 
 .section-inicio {
   text-align: center;
+  background: linear-gradient(180deg, #adadad 0%, #ebebeb 50%, #adadad 100%);
 }
 
 .article1-div {

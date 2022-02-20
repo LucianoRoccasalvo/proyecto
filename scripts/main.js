@@ -12,6 +12,13 @@
 
     let certificado = document.getElementById('certificado');
 
+    
+    let usuario = ["nombre", "apellido", "edad", "email", "certificado", ];
+
+    let usuario2 = [...usuario];
+        
+
+
   
     
     let miFormulario = document.getElementById('formulario');
