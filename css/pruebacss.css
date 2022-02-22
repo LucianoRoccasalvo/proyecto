@@ -1,5 +1,5 @@
 * {
-  padding: 1px;
+  padding: 3px;
   margin: 0px;
   text-align: center;
   justify-content: center;
@@ -33,7 +33,8 @@
 
 .section-inicio {
   text-align: center;
-  background-color: #000000; }
+
+}
 
 .card {
   background: linear-gradient(180deg, #adadad 0%, #ebebeb 50%, #adadad 100%);
