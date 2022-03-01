@@ -56,11 +56,45 @@
         </nav>
     </header>
 <!-- Imagen con los Productos -->
+    <h2>Productos</h2>
     <section class="section-productos">
-        <h5>Productos</h5>
-        <div>
-            <img class="img-productos" src="../imagenes/Productos.jpg" alt="productos">
-        </div>
+        <div id="listado"></div>
+        <figure class="">
+            <img src="../imagenes/Proteina.jpg" class="figure-img img-fluid rounded" width="300" height="300" alt="">
+            <figcaption class="figure-caption">
+                <p>Proteina</p>
+                <p>Marca: Whey Protein, Pulver, Ena, Gentech.</p>
+                <p>Beneficios:</p>
+                <p>Da sensacion de saciedad</p>
+                <p>Potencia el metabolismo</p>
+                <p>Recuperacion y formacion muscular</p>
+                <button onclick="hanldeClickProteina();" type="button" class="btn btn-outline-secondary">Consultar</button>
+            </figcaption>
+        </figure>
+        <figure class="">
+            <img src="../imagenes/Creatina.jpg" class="figure-img img-fluid rounded" width="300" height="300" alt="">
+            <figcaption class="figure-caption">
+                <p>Creatina</p>
+                <p>Marca: Star Nutrition, Whey, Whey Protein.</p>
+                <p>Beneficios:</p>
+                <p>Recuperacion muscular</p>
+                <p>Mejora rendimiento</p>
+                <p>Proporciona energia</p>
+                <button type="button" class="btn btn-outline-secondary">Consultar</button>
+            </figcaption>
+        </figure>
+        <figure class="">
+            <img src="../imagenes/BCAA.jpg" class="figure-img img-fluid rounded" width="300" height="300" alt="">
+            <figcaption class="figure-caption">
+                <p>BCAA</p>
+                <p>Marca: Ultra Tech, Stan Nutrition, Ena.</p>
+                <p>Beneficios:</p>
+                <p>Mejora rendimiento</p>
+                <p>Favorece sintesis proteica</p>
+                <p>ayuda al sistema inmunologico</p>
+                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Consultar</button>
+            </figcaption>
+        </figure>
     </section>
 <!-- Footer -->
     <footer class="footer">
@@ -80,5 +114,7 @@
     </footer>
 <!-- Boot/js -->
     <script src="../Bootstrap/js/bootstrap.js"></script>
+    <script src="../scripts/productos.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

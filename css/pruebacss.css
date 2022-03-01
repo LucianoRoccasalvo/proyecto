@@ -1,7 +1,6 @@
 * {
   padding: 3px;
   margin: 0px;
-  text-align: center;
   justify-content: center;
   font-family: 'Cinzel', serif;
 }
@@ -20,36 +19,22 @@
   background-color: #929292;
   border: #adadad 5px inset; }
 
-.footer {
-  margin: 10px 10px;
-  display: flex;
-  justify-content: end;
-  border: #adadad 5px inset;
-  background: #adadad;
-  background: linear-gradient(180deg, #adadad 0%, #ebebeb 50%, #adadad 100%); }
 
-.div-footer {
-  text-align: center; }
-
-.section-inicio {
+.centrado {
   text-align: center;
-
 }
+
+
 
 .card {
   background: linear-gradient(180deg, #adadad 0%, #ebebeb 50%, #adadad 100%);
 }
 
-.article1-div {
-  border: 5px inset; }
+.borde{
+  border: #adadad 5px inset;}
 
 .article2-div {
   border: 5px inset; }
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
 
 .img-gym {
   width: 50%; }
@@ -68,8 +53,10 @@ img {
   text-align: center; }
 
 .section-productos {
+  border: #adadad 5px outset;
+  align-items: center;
   text-align: center;
-  list-style: none; }
+}
 
 .img-productos {
   display: block;
@@ -83,6 +70,24 @@ img {
 .section-rutinas {
   text-align: center;
   border: #adadad 5px inset; }
+
+
+/* Footer */
+
+.footer {
+  margin: 10px 10px;
+  display: flex;
+  justify-content: end;
+  border: #adadad 5px inset;
+  background: #adadad;
+  background: linear-gradient(180deg, #adadad 0%, #ebebeb 50%, #adadad 100%); }
+
+.div-footer {
+  text-align: center; }
+
+
+
+/* Mediaqueries */
 
 @media (max-width: 360px) {
   .img-gym {
