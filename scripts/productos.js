@@ -23,7 +23,33 @@ fetch('scripts/productos.json')
 
         Swal.fire({
             title: 'Proteina',
-            text: '8:00 - 10:00 - 12:00 - 14:00 - 16:00 - 18:00 - 20:00',
+            text: 'Precio: $4000',
+            imageUrl: '../imagenes/Olympos.png',
+            imageWidth: 200,
+            imageHeight: 100,
+            imageAlt: 'Custom image',
+        })
+    
+    }
+
+    function hanldeClickCreatina() {
+
+        Swal.fire({
+            title: 'Creatina',
+            text: 'Precio: $3500',
+            imageUrl: '../imagenes/Olympos.png',
+            imageWidth: 200,
+            imageHeight: 100,
+            imageAlt: 'Custom image',
+        })
+    
+    }
+
+    function hanldeClickBCAA() {
+
+        Swal.fire({
+            title: 'BCAA',
+            text: 'Precio: $3000',
             imageUrl: '../imagenes/Olympos.png',
             imageWidth: 200,
             imageHeight: 100,
